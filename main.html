@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hand Drawn Christmas Cards</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body { /* This is the very background */
+                margin: 0;
+                padding: 40px 20px;
+                font-family: "Sono", sans-serif;
+                background-color: #1B3022; 
+                display: flex;
+                justify-content: center;
+            }
+
+            .container { /* This is the container for the title and pictures */
+                max-width: 1250px;
+                width: 100%;
+                background-color: #F7F3EB; 
+                padding: 40px;
+                border-radius: 16px;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+                text-align: center;
+            }
+
+            .title { /* The title obviously */
+                color: #9E2A2B; 
+                font-size: 2.2rem;
+                margin-top: 0;
+                margin-bottom: 35px;
+                letter-spacing: 1px;
+            }
+
+            .images { /* Container for the images */
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+                gap: 28px;
+                justify-items: center;
+            }
+
+            .pic { /* This is the actual image */
+                width: 100%;
+                max-width: 380px;
+                background-color: #FFFFFF;
+                border: 2px solid #D4A373; 
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(43, 33, 24, 0.12);
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            .pic:hover { /* Animation to make pics hover when going over them */
+                transform: translateY(-5px);
+                box-shadow: 0 12px 24px rgba(43, 33, 24, 0.2);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="title">Hand Drawn Christmas Cards</h1>
+            <div class="images">
+                <img src="./img/stuck_in_chimney.jpg" alt="stuck in chimney" class="pic" />
+                <img src="./img/good_boy.jpg" alt="good boy" class="pic" />
+                <img src="./img/wearing_coat.jpg" alt="wearing coat" class="pic" />
+                <img src="./img/china.jpg" alt="china" class="pic" />
+                <img src="./img/arrested.jpg" alt="arrested" class="pic" />
+                <img src="./img/doctor.jpg" alt="doctor" class="pic" />
+                <img src="./img/barbie_doll.jpg" alt="barbie doll" class="pic" />
+                <img src="./img/nice_attitude.jpg" alt="nice attitude" class="pic" />
+                <img src="./img/delivery_strategy.jpg" alt="delivery strategy" class="pic" />
+                <img src="./img/iphones.jpg" alt="iphones" class="pic" />
+                <img src="./img/concerned_turkey.jpg" alt="concerned turkey" class="pic" />
+                <img src="./img/training_day.jpg" alt="training day" class="pic" />
+                <img src="./img/artic.jpg" alt="artic" class="pic" />
+                <img src="./img/complaints.jpg" alt="complaints" class="pic" />
+                <img src="./img/morale_booster.jpg" alt="morale booster" class="pic" />
+                <img src="./img/french_revolution.jpg" alt="french revolution" class="pic" />
+                <img src="./img/inside_the_card.jpg" atl="card interior" class="pic" />
+                <img src="./img/tony_josh_motto.jpg" atl="motto" class="pic" />
+            </div>
+        </div>
+    </body>
+</html>
